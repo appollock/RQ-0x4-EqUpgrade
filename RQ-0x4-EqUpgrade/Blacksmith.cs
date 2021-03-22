@@ -1,4 +1,5 @@
-﻿using System;
+﻿using RQ_0x4_EqUpgrade.Model;
+using System;
 
 namespace RQ_0x4_EqUpgrade
 {
@@ -24,6 +25,19 @@ namespace RQ_0x4_EqUpgrade
                 item.Strength = UpgradeStat(item.Health);
                 item.Wisdom = UpgradeStat(item.Wisdom);
                 item.Level++;
+                switch (item)
+                {
+                    case Armor armor:
+                        armor.ArmorValue = UpgradeStat(armor.ArmorValue);
+                        break;
+                    case Weapon weapon:
+                        float delta = UpgradeStat(weapon.MaximumAttackValue);
+                        weapon.MinimumAttackValue += delta;
+                        weapon.MaximumAttackValue += delta;
+                        break;
+                    default:
+                        break;
+                }
             }
         }
 
