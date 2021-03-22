@@ -7,7 +7,7 @@ ______ _____         ______       _____                 _
 \_| \_\____/\___\___/|___/ \___|  \_/\_\\__,_|\___||___/\__|
 ```
 
-# 0x4 EQ Upgrade
+# FINAL 0x4 EQ Upgrade
 
 > EQ upgrade is a system that allows upgrading player's equipment in games. Upgraded equipment becomes better, has better statistics (more damage, defense, health, etc.).
 Players most often need some gold and materials to upgrade equipment and they have only a chance to upgrade successfully.
